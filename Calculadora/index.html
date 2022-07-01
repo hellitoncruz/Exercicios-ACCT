@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="shortcut icon" href="./src/images/calculadora.png" type="image/x-icon"/>
-    
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <title>Calculadora</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Calculadora</title>
 </head>
-<body>
+  <body>
     <div class="container">
-        <div class="display">
-            
-        </div>
-        <div class="calculator">
-            
-            <div class="tecla especial" onclick="inserir('%')">%</div>
-            <div class="tecla especial" onclick="inserir('/')">	
-                &#247;</div>
-            <div class="tecla especial" onclick="clean()">c</div>
-            <div class="tecla especial" onclick="backSpace()">	
-                &#8701;</div>
-            
-
-            <div class="tecla" onclick="inserir('7')">7</div>
-            <div class="tecla" onclick="inserir('8')">8</div>
-            <div class="tecla" onclick="inserir('9')">9</div>
-            <div class="tecla especial X" onclick="inserir('*')">x</div>
-
-            <div class="tecla" onclick="inserir(4)">4</div>
-            <div class="tecla" onclick="inserir('5')">5</div>
-            <div class="tecla" onclick="inserir('6')">6</div>
-            <div class="tecla especial" onclick="inserir('-')">-</div>
-
-            <div class="tecla " onclick="inserir('3')">3</div>
-            <div class="tecla " onclick="inserir('2')">2</div>
-            <div class="tecla" onclick="inserir('1')">1</div>
-            <div class="tecla especial" onclick="inserir('+')">+</div>
-
-            <div class="tecla" onclick="inserir('0')">0</div>
-            <div class="tecla especial" onclick="inserir('&#40;')">(</div>
-            <div class="tecla especial" onclick="inserir('&#41;')">)</div>
-            <div class="tecla especial" onclick="calculate()">=</div>
-
-            
-
-        </div>
+        <form name="form">
+            <input class="display" id="display" value="0" disabled>
+        </form>
+      <table>
+        <tr>
+          <td><input type="button" class="operator" value="%"></td>
+          <td><input type="button" class="operator" value="/"></td>
+          
+          <td><input type="button" class="operator" value="c" id="clean"></td>
+          
+          
+          <td><input type="button" class="operator" value="<"></td>
+          
+        </tr>
+        <tr>
+          <td><input type="button" class="number" value="7"></td>
+          <td><input type="button" class="number" value="8"></td>
+          <td><input type="button" class="number" value="9"></td>
+          <td><input type="button" class="operator" value="x"></td>
+        </tr>
+        <tr>
+          <td><input type="button" class="number" value="4"></td>
+          <td><input type="button" class="number" value="5"></td>
+          <td><input type="button" class="number" value="6"></td>
+          <td><input type="button" class="operator" value="-"></td>
+        </tr>
+        <tr>
+          <td><input type="button" class="number" value="1"></td>
+          <td><input type="button" class="number" value="2"></td>
+          <td><input type="button" class="number" value="3"></td>
+          <td ><input type="button" class="operator" value="+"></td>
+        </tr>
+        <tr>
+          <td ><input type="button" class="number" value="0"></td>
+          <td><input type="button" class="operator" value="(" ></td>
+          <td><input type="button" class="operator" value=")" ></td>
+          <td><input type="button" class="operator" value="=" ></td>
+        </tr>
+      </table>
     </div>
+    
+    <script src="./script/index.js"></script>
 
-    <script src="./src/scripts/index.js"></script>
-</body>
+  </body>
 </html>
