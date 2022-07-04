@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(12, 12, 12, 0.829);
+  font-family: 'Poppins', 'sans-serif';
+  height: 100vh;
+}
